@@ -1,0 +1,70 @@
+.resume {
+  width: 8.5in;
+  background-color: #ffffff00;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #cccccc00;
+  margin: 20px;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.resume-header p {
+  margin: 5px 0;
+}
+
+.resume-section {
+  margin-bottom: 20px;
+}
+
+.resume-section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.resume-section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.job h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.job p {
+  margin: 5px 0;
+  font-style: italic;
+}
+
+.job ul {
+  margin-top: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+@media print {
+  body {
+    background-color: #fff;
+  }
+
+  .resume {
+    box-shadow: none;
+    border: none;
+  }
+}

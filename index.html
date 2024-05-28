@@ -2,35 +2,112 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Terminal Simulator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="resume.css">
 </head>
 
 <body>
-  <canvas id="bg"></canvas>
+  <div class="terminal" id="terminal">
+    <div class="flicker"></div>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+    <div class="terminal-body">
+      <div class="terminal-content" id="terminal-content">
+        <p class="line">user@computer:~$ <span id="current-input"></span><span class="blinking-cursor">█</span></p>
+      </div>
+      <input type="text" id="terminal-input" autocomplete="off" autofocus>
 
-  <main>
+      <div class="resume">
+        <header class="resume-header">
+          <h1>Rintu Raj</h1>
+          <p>Software Engineer</p>
+          <p>Email: rintu.raj@example.com | Phone: 01234 567 890</p>
+          <p>LinkedIn: linkedin.com/in/rintu-raj-3a6399138 | GitHub: github.com/rintu-raj</p>
+        </header>
 
-    <header>
-      <h1>Jeff Delaney</h1>
-      <p>🚀 Welcome to my website!</p>
-    </header>
-
-
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I am a software engineer with a passion for building things that make people's lives better.
-        I am currently a student at the University of Washington, studying Computer Science and
-        Mathematics.
-      </p>
-      <p>
-        I am currently working on a project called </p>
+        <section class="resume-section">
+          <h2>Profile</h2>
+          <p>Experienced software engineer with a demonstrated history of working in the IT industry. Skilled in Java,
+            Spring Boot, Microservices, and Cloud Technologies. Strong engineering professional with a Bachelor’s degree
+            in Computer Science and Engineering.</p>
         </section>
-  </main>
-  <script type="module" src="/main.js"></script>
+
+        <section class="resume-section">
+          <h2>Technical Skills</h2>
+          <ul>
+            <li>Programming Languages: Java, Python</li>
+            <li>Web Technologies: HTML, CSS, JavaScript</li>
+            <li>Frameworks: Spring Boot, Angular</li>
+            <li>Databases: MySQL, MongoDB</li>
+            <li>Cloud: AWS, Azure</li>
+            <li>Tools: Git, Jenkins, Docker</li>
+            <li>Methodologies: Agile, TDD</li>
+          </ul>
+        </section>
+
+        <section class="resume-section">
+          <h2>Experience</h2>
+          <div class="job">
+            <h3>Senior Software Engineer</h3>
+            <p>XYZ Corporation, London | June 2020 - Present</p>
+            <ul>
+              <li>Led a team of 5 software engineers in developing a scalable microservices architecture for the
+                e-commerce platform.</li>
+              <li>Improved application performance by 30% through code optimization and efficient algorithms.</li>
+              <li>Implemented CI/CD pipelines using Jenkins and Docker to streamline the deployment process.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <h3>Software Engineer</h3>
+            <p>ABC Solutions, Manchester | July 2017 - May 2020</p>
+            <ul>
+              <li>Developed and maintained web applications using Spring Boot and Angular.</li>
+              <li>Collaborated with cross-functional teams to design and implement new features.</li>
+              <li>Reduced bug occurrences by 20% through rigorous testing and debugging.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="resume-section">
+          <h2>Education</h2>
+          <p>Bachelor of Technology in Computer Science and Engineering, XYZ University | 2013 - 2017</p>
+        </section>
+
+        <section class="resume-section">
+          <h2>Certifications</h2>
+          <ul>
+            <li>Certified ScrumMaster (CSM)</li>
+            <li>Oracle Certified Professional, Java SE 8 Programmer</li>
+            <li>AWS Certified Solutions Architect</li>
+          </ul>
+        </section>
+
+        <section class="resume-section">
+          <h2>Projects</h2>
+          <ul>
+            <li><strong>Personal Portfolio:</strong> A responsive website showcasing my projects and skills, built with
+              Angular and CSS.</li>
+            <li><strong>Microservices Application:</strong> Developed a microservices-based application using Spring
+              Boot and Docker.</li>
+          </ul>
+        </section>
+
+        <section class="resume-section">
+          <h2>References</h2>
+          <p>Available upon request.</p>
+        </section>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
 </body>
+
+
 
 </html>
