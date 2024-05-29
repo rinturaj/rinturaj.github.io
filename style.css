@@ -10,11 +10,19 @@ body {
 }
 
 .terminal {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.terminal::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.terminal {
   width: 80%;
   height: 80%;
   max-width: 1000px;
   background-color: #0c5a08;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   overflow: scroll;
 }
@@ -66,6 +74,27 @@ body {
 
 .line {
   margin: 0;
+}
+
+/* The typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The blinking cursor animation */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 #terminal-input {
